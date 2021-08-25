@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JVM Memory</title>
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/common.js"></script>
+<script src="jvm_memory.js"></script>
+</head>
+<body>
+	<div class="tool_menu" id="timeChangeDiv">
+		<a href="#" value="10">10min</a> 
+		<a href="#" value="30">30min</a> 
+		<a href="#" value="60">1h</a> 
+		<a href="#" value="180" class="active">3h</a> 
+		<a href="#" value="1440">1d</a>
+	</div>
+
+	<div id="heapMemoryDiv" class="chartbox"></div>
+	<div id="noHeapMemoryDiv" class="chartbox"></div>
+	<div id="threadInfoDiv" class="chartbox"></div>
+	<div id="cpuRateDiv" class="chartbox"></div>
+	<div id="otherMemoryDiv" class="chartbox"></div>
+	<div id="gcCountDiv" class="chartbox"></div>
+	<div id="gcTimeDiv" class="chartbox"></div>
+</body>
+</html>

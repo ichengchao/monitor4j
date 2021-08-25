@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring Method</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/common.js"></script>
+<script src="spring_method.js"></script>
+</head>
+<body>
+	<div class="tool_menu" id="timeChangeDiv">
+		<a href="#" value="10">10min</a> <a href="#" value="30">30min</a> <a
+			href="#" value="60">1h</a> <a href="#" value="180" class="active">3h</a>
+		<a href="#" value="1440">1d</a>
+	</div>
+	<div align="center" style="margin-top: 20px; margin-bottom: 20px;">
+		<div id="springMethodDiv">loading</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h5 class="modal-title" id="myModalLabel">Detail</h5>
+				</div>
+				<div id="springMethodDetailDiv" class="chartbox">点击查看详情</div>
+				<div id="springMethodErrorDiv" class="chartbox">错误信息</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
