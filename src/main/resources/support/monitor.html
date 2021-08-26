@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<title>java monitor</title>
-<link href="css/main.css" rel="stylesheet">
-<script type="text/javascript" src="js/common.js"></script>
-<script>
-	var maxIframeHeight = 0;
-	window.onload = function() {
-		changeTab('navigationDiv', function(selt) {
-			var myframe = document.getElementById('iframe');
-			myframe.setAttribute('src', selt.getAttribute('data-link'));
-		});
-	}
-	var autoSetHeight = function() {
-		var mainDiv = document.getElementById('mainDiv');
-		//onload时间只能执行一次,切换回来的时候
-		window.setTimeout(function() {
-			var iframeHeight = iframe.document.body.scrollHeight;
-			if (iframeHeight > maxIframeHeight) {
-				maxIframeHeight = iframeHeight;
-				mainDiv.style.height = maxIframeHeight + "px";
-			}
-		}, 100);
-		window.setTimeout(function() {
-			var iframeHeight = iframe.document.body.scrollHeight;
-			if (iframeHeight > maxIframeHeight) {
-				maxIframeHeight = iframeHeight;
-				mainDiv.style.height = maxIframeHeight + "px";
-			}
-		}, 1000);
-	}
-</script>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>java monitor</title>
+	<link href="css/main.css" rel="stylesheet">
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+		var maxIframeHeight = 0;
+		window.onload = function () {
+			changeTab('navigationDiv', function (selt) {
+				var myframe = document.getElementById('iframe');
+				myframe.setAttribute('src', selt.getAttribute('data-link'));
+			});
+		}
+		var autoSetHeight = function () {
+			var mainDiv = document.getElementById('mainDiv');
+			//onload时间只能执行一次,切换回来的时候
+			window.setTimeout(function () {
+				var iframeHeight = iframe.document.body.scrollHeight;
+				if (iframeHeight > maxIframeHeight) {
+					maxIframeHeight = iframeHeight;
+					mainDiv.style.height = maxIframeHeight + "px";
+				}
+			}, 100);
+			window.setTimeout(function () {
+				var iframeHeight = iframe.document.body.scrollHeight;
+				if (iframeHeight > maxIframeHeight) {
+					maxIframeHeight = iframeHeight;
+					mainDiv.style.height = maxIframeHeight + "px";
+				}
+			}, 1000);
+		}
+	</script>
 </head>
+
 <body>
 	<div class="header" id="navigationDiv">
 		<ul>
@@ -55,4 +57,5 @@
 		<iframe src="jvm_memory.html" id="iframe" onload="autoSetHeight();"></iframe>
 	</div>
 </body>
+
 </html>
