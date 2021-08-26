@@ -24,11 +24,7 @@ public class WebUrlDataCalHelper {
         return webUrlDataManager.getWebUrlMap().size() > maxCount;
     }
 
-    /**
-     * before url request
-     * 
-     * @param url
-     */
+    // before url request
     public static void handleBefore(String url) {
         if (StringUtils.isBlank(url)) {
             return;

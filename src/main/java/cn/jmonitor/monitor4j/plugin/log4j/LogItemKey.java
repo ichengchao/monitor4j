@@ -18,9 +18,8 @@ public class LogItemKey {
     private String methodName;
 
     /**
-     * @param exceptionType
-     * @param methodName
-     * @param lineNumber
+     * @param exceptionType 异常类型
+     * @param methodName 方法名
      */
     public LogItemKey(String exceptionType, String methodName) {
         super();

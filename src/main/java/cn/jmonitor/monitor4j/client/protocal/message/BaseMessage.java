@@ -41,7 +41,7 @@ public abstract class BaseMessage {
      * request:主动发起消息<br>
      * reponse:用于请求响应
      * 
-     * @return
+     * @return boolean
      */
     public abstract boolean isRequestFormat();
 

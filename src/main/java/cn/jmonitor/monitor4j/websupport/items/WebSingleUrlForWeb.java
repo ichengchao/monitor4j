@@ -18,11 +18,6 @@ public class WebSingleUrlForWeb {
     WebUrlStat webUrlStat;
     private Date timeStamp;
 
-    /**
-     * @param url
-     * @param webUrlStat
-     * @param timeStamp
-     */
     public WebSingleUrlForWeb(String url, WebUrlStat webUrlStat, Date timeStamp) {
         super();
         this.url = url;

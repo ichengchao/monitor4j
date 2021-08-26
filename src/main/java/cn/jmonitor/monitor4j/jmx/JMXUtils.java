@@ -161,8 +161,8 @@ public class JMXUtils {
      * 格式化<br>
      * 只支持单行或者多行的数据,如果是多行直接返回数组
      * 
-     * @param getAttribute
-     * @return
+     * @param getAttribute 属性
+     * @return Object
      */
     public static Object getAttributeFormatted(GetAttribute getAttribute) {
         Map<String, Object> map = getAttribute(getAttribute);

@@ -59,12 +59,7 @@ public class JMonitorWebFilter implements Filter {
 
     }
 
-    /**
-     * 抽象出来能让使用方重写该方法
-     * 
-     * @param request
-     * @return
-     */
+    // 抽象出来能让使用方重写该方法
     public String getRequestURI(HttpServletRequest request) {
         return request.getRequestURI();
     }

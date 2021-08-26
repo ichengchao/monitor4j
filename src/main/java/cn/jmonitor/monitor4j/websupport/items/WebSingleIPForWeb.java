@@ -18,11 +18,6 @@ public class WebSingleIPForWeb {
     WebIPStat webIPStat;
     private Date timeStamp;
 
-    /**
-     * @param ip
-     * @param webIPStat
-     * @param timeStamp
-     */
     public WebSingleIPForWeb(String ip, WebIPStat webIPStat, Date timeStamp) {
         super();
         this.ip = ip;

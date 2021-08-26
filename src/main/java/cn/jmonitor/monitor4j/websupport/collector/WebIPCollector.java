@@ -45,10 +45,6 @@ public class WebIPCollector extends BaseCollector {
 
     }
 
-    /**
-     * @param timeInterval
-     * @return
-     */
     public static String getWebIPForHtml(Integer timeInterval) {
         if (null == timeInterval) {
             throw new IllegalArgumentException("timeInterval can not be null!");
