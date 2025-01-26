@@ -5,13 +5,13 @@
 
 	<groupId>cn.jmonitor</groupId>
 	<artifactId>monitor4j</artifactId>
-	<version>0.3</version>
+	<version>0.3.1</version>
 	<packaging>jar</packaging>
 
 	<name>monitor4j</name>
 	<description>java runtime monitor</description>
 	<url>http://www.jmonitor.cn/monitor4j</url>
-	<inceptionYear>2021</inceptionYear>
+	<inceptionYear>2024</inceptionYear>
 
 
 	<properties>
@@ -87,6 +87,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
@@ -150,7 +151,7 @@
 					<plugin>
 						<groupId>org.sonatype.central</groupId>
 						<artifactId>central-publishing-maven-plugin</artifactId>
-						<version>0.5.0</version>
+						<version>0.7.0</version>
 						<extensions>true</extensions>
 						<configuration>
 							<publishingServerId>central</publishingServerId>
@@ -167,8 +168,7 @@
 				</snapshotRepository>
 				<repository>
 					<id>oss</id>
-					<url>
-						https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 				</repository>
 			</distributionManagement>
 		</profile>
