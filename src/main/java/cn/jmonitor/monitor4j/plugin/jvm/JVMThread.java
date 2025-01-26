@@ -22,7 +22,6 @@ import com.sun.management.OperatingSystemMXBean;
  * @author charles 2013年12月20日 下午2:25:16
  */
 
-@SuppressWarnings("restriction")
 public class JVMThread implements JVMThreadMBean {
 
     private final static Log LOG = LogFactory.getLog(JVMThread.class);

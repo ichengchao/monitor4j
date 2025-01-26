@@ -7,13 +7,12 @@
  */
 package cn.jmonitor.monitor4j.plugin.web;
 
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-
 import cn.jmonitor.monitor4j.common.JmonitorBootstrap;
 import cn.jmonitor.monitor4j.common.JmonitorConstants;
 import cn.jmonitor.monitor4j.utils.FileUtils;
 import cn.jmonitor.monitor4j.utils.StringUtils;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
 
 /**
  * web启动,通过web容器带动

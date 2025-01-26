@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import cn.jmonitor.monitor4j.utils.JsonUtils;
 import cn.jmonitor.monitor4j.websupport.collector.ExceptionCollector;
@@ -20,8 +20,8 @@ import cn.jmonitor.monitor4j.websupport.items.LogInfoSingleInfoForWeb;
 import cn.jmonitor.monitor4j.websupport.items.SpringMethodSingleForWeb;
 import cn.jmonitor.monitor4j.websupport.items.WebSingleIPForWeb;
 import cn.jmonitor.monitor4j.websupport.items.WebSingleUrlForWeb;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class MonitorWebDataFacade {
 
